@@ -1,12 +1,12 @@
 # Sistema de Detección de Caída Libre con Arduino y NRF24L01
 
 ## Objetivo
-Detectar la caída libre de una masa utilizando un sensor piezoeléctrico y enviar la letra "t" a una computadora a través de comunicación inalámbrica, simulando un disparador para grabaciones o experimentos.
+Detectar la caída libre de una masa utilizando un sensor piezoeléctrico y enviar la letra "t" a una computadora a través de comunicación inalámbrica, simulando un disparador para grabaciones o experimentos geologicos.
 
 ## Descripción
 El sistema consta de dos módulos Arduino:
-1. **Arduino Pro Mini (Transmisor)**: Con un sensor piezoeléctrico conectado a A0 y un módulo NRF24L01. Detecta la vibración de la caída (umbral > 500) y envía la señal 't' de forma inalámbrica.
-2. **Arduino Pro Micro (Receptor)**: Con otro módulo NRF24L01 y funcionalidad HID. Recibe la señal 't' y la envía a la computadora por USB, actuando como teclado.
+1. **Arduino Pro Mini (Transmisor)**: Con un sensor piezoeléctrico conectado a la entrada analógica A0 y un módulo NRF24L01. Detecta la vibración de la caída (umbral > 500) y envía el caracter 't' de forma inalámbrica.
+2. **Arduino Pro Micro (Receptor)**: Con otro módulo NRF24L01 y funcionalidad HID. Recibe el caracter 't' y lo envía a la computadora por USB, actuando como teclado y gatillando la grabación de datos usando geofonos.
 
 ## Funcionamiento
 - El sensor piezoeléctrico detecta la vibración de la masa al caer.
